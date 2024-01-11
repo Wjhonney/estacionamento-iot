@@ -8,7 +8,6 @@ Estava prevista para essa etapa a implementação em código e simulação de ha
 * Contagem do número de sinais com nível lógico alto
 * ~~Exibição desses valores no display LCD utilizando o protocolo i2c~~
 
-
 Entretato encontrei dificildades em implementar a exibição de dados no display utilizando o protocolo i2c no simlador SimuIDE. Decidi procurar um outro simulador para execultar apenas esse tópico. Pois estou utilizando o Serial fornecido pelo SimulIDE e a exibição dos dados no display LCD na implementação real é simples.
 
 
@@ -20,7 +19,6 @@ Está prevista para essa fase:
 
 
 Nessa fase será feito os testes com o envio de dados para o Firebase utilizando o ESP32.
-
 
 ## Parte 3
 Está prevista para esa fase:
