@@ -1,7 +1,7 @@
-<circuit version="1.0.0-SR2" rev="1449" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+<circuit version="1.0.0-SR2" rev="1449" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="1" >
 
 <item itemtype="Subcircuit" CircId="Uno-1" mainComp="false" Show_id="true" Show_Val="false" Pos="524,360" rotation="0" hflip="1" vflip="1" label="Uno-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false">
-<mainCompProps itemtype="MCU" CircId="1_mega328-109" mainComp="true" Show_id="true" Show_Val="false" Pos="20,20" rotation="0" hflip="1" vflip="1" label="1_mega328-109" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="../../../AppData/Local/Temp/arduino/sketches/51E72356E2771EFA991737A7165CFE6A/main.ino.hex" Auto_Load="false" Rst_enabled="true" Ext_Osc="true" Wdt_enabled="false" />
+<mainCompProps itemtype="MCU" CircId="1_mega328-109" mainComp="true" Show_id="true" Show_Val="false" Pos="20,20" rotation="0" hflip="1" vflip="1" label="1_mega328-109" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="../../codigos/parte01/main.ino.hex" Auto_Load="false" Rst_enabled="true" Ext_Osc="true" Wdt_enabled="false" />
 </item>
 
 <item itemtype="I2CToParallel" CircId="I2CToParallel-2" mainComp="false" Show_id="false" Show_Val="false" Pos="860,508" rotation="0" hflip="1" vflip="1" label="I2CToParallel-2" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Control_Code="80" Frequency="100 _KHz" />
@@ -31,12 +31,6 @@
 <item itemtype="I2CToParallel" CircId="I2CToParallel-214" mainComp="false" Show_id="false" Show_Val="false" Pos="860,780" rotation="0" hflip="1" vflip="1" label="I2CToParallel-214" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Control_Code="80" Frequency="100 _KHz" />
 
 <item itemtype="Rail" CircId="Rail-360" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="984,376" rotation="0" hflip="1" vflip="1" label="Rail-360" idLabPos="-16,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" />
-
-<item itemtype="Aip31068_i2c" CircId="Aip31068_i2c-365" mainComp="false" Show_id="true" Show_Val="false" Pos="1092,472" rotation="0" hflip="1" vflip="1" label="Aip31068_i2c-365" idLabPos="70,-82" labelrot="0" valLabPos="-16,20" valLabRot="0" Rows="2 _Rows" Cols="16 _Columns" Control_Code="83" Frequency="100 _KHz" />
-
-<item itemtype="Aip31068_i2c" CircId="Aip31068_i2c-366" mainComp="false" Show_id="true" Show_Val="false" Pos="1092,600" rotation="0" hflip="1" vflip="1" label="Aip31068_i2c-366" idLabPos="70,-82" labelrot="0" valLabPos="-16,20" valLabRot="0" Rows="2 _Rows" Cols="16 _Columns" Control_Code="84" Frequency="100 _KHz" />
-
-<item itemtype="Aip31068_i2c" CircId="Aip31068_i2c-367" mainComp="false" Show_id="true" Show_Val="false" Pos="1092,744" rotation="0" hflip="1" vflip="1" label="Aip31068_i2c-367" idLabPos="70,-82" labelrot="0" valLabPos="-16,20" valLabRot="0" Rows="2 _Rows" Cols="16 _Columns" Control_Code="85" Frequency="100 _KHz" />
 
 <item itemtype="Node" CircId="Node-10" mainComp="false" Pos="828,524" />
 
@@ -182,18 +176,6 @@
 
 <item itemtype="Node" CircId="Node-361" mainComp="false" Pos="1024,484" />
 
-<item itemtype="Node" CircId="Node-371" mainComp="false" Pos="780,404" />
-
-<item itemtype="Node" CircId="Node-378" mainComp="false" Pos="1052,492" />
-
-<item itemtype="Node" CircId="Node-380" mainComp="false" Pos="1052,620" />
-
-<item itemtype="Node" CircId="Node-383" mainComp="false" Pos="772,400" />
-
-<item itemtype="Node" CircId="Node-386" mainComp="false" Pos="1060,484" />
-
-<item itemtype="Node" CircId="Node-389" mainComp="false" Pos="1060,612" />
-
 <item itemtype="Node" CircId="Node-393" mainComp="false" Pos="920,756" />
 
 <item itemtype="Node" CircId="Node-396" mainComp="false" Pos="928,764" />
@@ -209,8 +191,6 @@
 <item itemtype="Node" CircId="Node-411" mainComp="false" Pos="968,804" />
 
 <item itemtype="Node" CircId="Node-429" mainComp="false" Pos="976,812" />
-
-<item itemtype="Connector" uid="connector-430" startpinid="Uno-1-A4" endpinid="Node-383-0" pointList="676,384,772,384,772,400" />
 
 <item itemtype="Connector" uid="connector-431" startpinid="I2CToParallel-2-in3" endpinid="Node-10-0" pointList="836,524,828,524" />
 
@@ -554,32 +534,6 @@
 
 <item itemtype="Connector" uid="connector-601" startpinid="Node-361-1" endpinid="Rail-360-outnod" pointList="1024,484,1024,376,1000,376" />
 
-<item itemtype="Connector" uid="connector-602" startpinid="Uno-1-A5" endpinid="Node-371-0" pointList="676,376,780,376,780,404" />
-
-<item itemtype="Connector" uid="connector-603" startpinid="Node-371-2" endpinid="Node-186-0" pointList="780,404,780,500" />
-
-<item itemtype="Connector" uid="connector-604" startpinid="Node-371-1" endpinid="Node-378-0" pointList="780,404,1052,404,1052,492" />
-
-<item itemtype="Connector" uid="connector-605" startpinid="Aip31068_i2c-365PinSCL" endpinid="Node-378-1" pointList="1116,480,1116,492,1052,492" />
-
-<item itemtype="Connector" uid="connector-606" startpinid="Node-378-2" endpinid="Node-380-0" pointList="1052,492,1052,620" />
-
-<item itemtype="Connector" uid="connector-607" startpinid="Node-380-2" endpinid="Aip31068_i2c-366PinSCL" pointList="1052,620,1116,620,1116,608" />
-
-<item itemtype="Connector" uid="connector-608" startpinid="Node-380-1" endpinid="Aip31068_i2c-367PinSCL" pointList="1052,620,1052,764,1116,764,1116,752" />
-
-<item itemtype="Connector" uid="connector-609" startpinid="Node-383-2" endpinid="Node-183-0" pointList="772,400,772,492" />
-
-<item itemtype="Connector" uid="connector-610" startpinid="Node-383-1" endpinid="Node-386-0" pointList="772,400,1060,400,1060,484" />
-
-<item itemtype="Connector" uid="connector-611" startpinid="Node-386-2" endpinid="Aip31068_i2c-365PinSDA" pointList="1060,484,1108,484,1108,480" />
-
-<item itemtype="Connector" uid="connector-612" startpinid="Node-386-1" endpinid="Node-389-0" pointList="1060,484,1060,612" />
-
-<item itemtype="Connector" uid="connector-613" startpinid="Node-389-2" endpinid="Aip31068_i2c-366PinSDA" pointList="1060,612,1108,612,1108,608" />
-
-<item itemtype="Connector" uid="connector-614" startpinid="Node-389-1" endpinid="Aip31068_i2c-367PinSDA" pointList="1060,612,1060,756,1108,756,1108,752" />
-
 <item itemtype="Connector" uid="connector-615" startpinid="ResistorDip-209-resistor0-ePin0" endpinid="Node-393-1" pointList="920,748,920,756" />
 
 <item itemtype="Connector" uid="connector-616" startpinid="Node-393-2" endpinid="SwitchDip-211-switch0-pinP" pointList="920,756,984,756" />
@@ -615,5 +569,9 @@
 <item itemtype="Connector" uid="connector-631" startpinid="Node-354-1" endpinid="I2CToParallel-214-in4" pointList="820,788,820,804,836,804" />
 
 <item itemtype="Connector" uid="connector-632" startpinid="Node-429-1" endpinid="I2CToParallel-214-out7" pointList="976,812,884,812" />
+
+<item itemtype="Connector" uid="connector-430" startpinid="Uno-1-A4" endpinid="Node-183-0" pointList="676,384,772,384,772,492" />
+
+<item itemtype="Connector" uid="connector-602" startpinid="Uno-1-A5" endpinid="Node-186-0" pointList="676,376,780,376,780,500" />
 
 </circuit>
